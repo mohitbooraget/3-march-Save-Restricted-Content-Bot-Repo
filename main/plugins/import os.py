@@ -4,8 +4,8 @@ from telethon import events, Button
 from telethon.tl.types import InputMediaPhoto
 
 S = "/start"
-START_PIC = "https://graph.org/file/da97ceca70e55983b4891.png"
-TEXT = "Send me the Link of any message of Restricted Channels to Clone it here.\nFor private channel's messages, send the Invite Link first.\n\n👉🏻Execute /batch for bulk process upto 10K files range."
+START_PIC = "https://graph.org/file/f4d4a6e3ed00365fed281.jpg"
+TEXT = "Send me the Link of any message of Restricted Channels to Clone it here.\nFor private channel's messages, send the Invite Link first.\n\n👉🏻Execute that Hidden Command for bulk process upto 10K files range."
 
 def is_set_button(data):
     return data == "set"
@@ -52,7 +52,7 @@ async def start_command(event):
     buttons = [
         [Button.inline("SET THUMB", data="set"),
          Button.inline("REM THUMB", data="rem")],
-        [Button.url("Join Channel", url="https://telegram.dog/dev_gagan")]
+        [Button.url("Join Channel", url="https://t.me/imendaxpublic")]
     ]
 
     # Sending photo with caption and buttons
@@ -64,9 +64,9 @@ async def start_command(event):
     )
 
 M = "/plan"
-PREMIUM_PIC = "https://graph.org/file/05971cbfdf6987150b9ae.png"
+PREMIUM_PIC = "https://graph.org/file/f4d4a6e3ed00365fed281.jpg"
 PRE_TEXT = """🌟 Premium Plan Features 🌟\n\n
-💰 **Premium Price**: Starting from $1 or 70 INR accepted via **__AMAZON GIFT CARD__** (terms and conditions apply).\n
+💰 **Premium Price**: Ask To Mendax Bro accepted via **__PHONEPE GIFT CARD__** (terms and conditions apply).\n
 📥 **Download Limit**: Users can download up to 10,000 files in a single batch command.\n
 🛑 **Batch Command Interruption**: Once the batch command is initiated, it cannot be stopped immediately due to security and user interruption concerns.\n
    - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n
@@ -78,8 +78,8 @@ PRE_TEXT = """🌟 Premium Plan Features 🌟\n\n
 async def plan_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Send Gift Card Code", url="https://t.me/team_spy_bot")],
-        [Button.url("Join Channel", url="https://telegram.dog/dev_gagan")]
+        [Button.url("Send Gift Card Code", url="https://t.me/mendaxchatbot")],
+        [Button.url("Join Channel", url="https://t.me/imendaxpublic")]
     ]
 
     # Sending photo with caption and buttons
@@ -90,13 +90,13 @@ async def plan_command(event):
         buttons=buttons
     )
 T = "/terms"
-TERM_PIC = "https://graph.org/file/82df13b938b182509081e.png"
+TERM_PIC = "https://graph.org/file/f4d4a6e3ed00365fed281.jpg"
 TERM_TEXT = """📜 **Terms and Conditions** 📜\n\n
 - We are not responsible for user deeds, and we do not promote copyrighted content. If any user engages in such activities, it is solely their responsibility.\n
 - Upon purchase, we do not guarantee the uptime, downtime, or the validity of the plan. Authorization and banning of users are at our discretion; we reserve the right to ban or authorize users at any time.\n
 - Payment to us does not guarantee authorization for the /batch command. All decisions regarding authorization are made at our discretion and mood.\n\n
 Thank you,\n
-Team SPY
+Team 𝐌𝐞𝐧𝐝𝐚𝐱™❤️
 """
 
 
@@ -104,8 +104,8 @@ Team SPY
 async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Have a Query?", url="https://t.me/gagan_yan")],
-         [Button.url("Join Channel", url="https://telegram.dog/dev_gagan")]
+        [Button.url("Have a Query?", url="https://t.me/imendax")],
+         [Button.url("Join Channel", url="https://t.me/imendaxpublic")]
     ]
 
     # Sending photo with caption and buttons
