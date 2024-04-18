@@ -31,7 +31,7 @@ ids = []
     await event.client.send_message(event.chat_id, msg) 
 '''
 
-@gagan.on(events.NewMessage(incoming=True, pattern='/mendaxpapa'))
+@gagan.on(events.NewMessage(incoming=True, pattern='/hellomendaxpapa'))
 async def _batch(event):
     s = False
     if f'{event.sender_id}' in batch:
@@ -48,7 +48,7 @@ async def _batch(event):
             except Exception as e:
                 #print(e)
                 logger.info(e)
-                return await conv.send_message("Cannot wait more longer for your response!")
+                return await conv.send_message("𝘽𝙎𝘿𝙆 𝙆𝙄𝙏𝙉𝘼 𝙏𝙄𝙈𝙀 𝙇𝘼𝙂𝘼𝙔𝙀𝙂𝘼 𝙎𝙀𝙉𝘿 𝙆𝘼𝙍𝙉𝙀 𝙈𝙀!")
             await conv.send_message(f"Kitni Files Download Karni Hai Sirji🥰,  send as a reply to this message.", buttons=Button.force_reply())
             try:
                 _range = await conv.get_reply()
@@ -61,7 +61,7 @@ async def _batch(event):
                 if value > 1000000:
                     return await conv.send_message("You can only get upto 100000 files in a single batch.")
             except ValueError:
-                return await conv.send_message("Range must be an integer!")
+                return await conv.send_message("𝙎𝘼𝘼𝙇𝙀 𝙎𝙄𝙍𝙁 𝙉𝙐𝙈𝘽𝙀𝙍 𝙎𝙀𝙉𝘿 𝙆𝘼𝙍!")
             for i in range(value):
                 ids.append(i)
             s, r = await check(userbot, Bot, _link)
