@@ -44,7 +44,7 @@ async def check(userbot, client, link):
             return False, "**Invalid Link!**"
         except Exception as e:
             logging.info(e)
-            return False, "Have you joined the channel?"
+            return False, "𝘽𝙎𝘿𝙆 𝙋𝙀𝙃𝙇𝙀 𝙄𝙉𝙑𝙄𝙏𝙀 𝙇𝙄𝙉𝙆 𝙎𝙀𝙉𝘿 𝙆𝘼𝙍"
     else:
         try:
             chat = str(link.split("/")[-2])
@@ -133,7 +133,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                 progress=progress_for_pyrogram,
                 progress_args=(
                     client,
-                    "**__Unrestricting__: __[Team SPY](https://t.me/dev_gagan)__**\n ",
+                    "**__𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂 𝙎𝙄𝙍 𝙅𝙄🫡__: __[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/imendaxpublic)__**\n ",
                     edit,
                     time.time()
                 )
@@ -174,7 +174,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     logging.info(e)
                     thumb_path = None
                 
-                caption = f"{msg.caption}\n\n__Downloaded by **Shaurya **__" if msg.caption else "__Downloaded by **Shaurya**__"
+                caption = f"{msg.caption}\n\n__Downloaded by **𝐌𝐞𝐧𝐝𝐚𝐱™❤️ **__" if msg.caption else "__Downloaded by **𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__"
                 await client.send_video(
                     chat_id=sender,
                     video=path,
@@ -187,7 +187,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     progress=progress_for_pyrogram,
                     progress_args=(
                         client,
-                        '**__Uploading: [Team SPY](https://t.me/dev_gagan)__**\n ',
+                        '**__𝙐𝙋𝙇𝙊𝘼𝘿𝙄𝙉𝙂 ⬆️ 𝙎𝙄𝙍 𝙅𝙄🫡: [𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/t.me/imendaxpublic)__**\n ',
                         upm,
                         time.time()
                     )
@@ -204,7 +204,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     file = path
 
                 
-                caption = f"{msg.caption}\n\n__Downloaded by Shaurya**__" if msg.caption else "__Downloaded by Shaurya**__"
+                caption = f"{msg.caption}\n\n__Downloaded by 𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__" if msg.caption else "__Downloaded by 𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__"
                 await upm.edit("__Uploading photo...__")
 
                 await bot.send_file(sender, path, caption=caption)
@@ -220,7 +220,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     file = path
                 thumb_path=thumbnail(sender)
                 
-                caption = f"{msg.caption}\n\n__Unrestricted by **Downloaded by Shaurya**__" if msg.caption else "__Unrestricted by **Downloaded by Shaurya**__"
+                caption = f"{msg.caption}\n\n__DOWNLOADED by **Downloaded by 𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__" if msg.caption else "__DOWNLOADED by **Downloaded by 𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__"
                 await client.send_document(
                     sender,
                     path, 
@@ -229,7 +229,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     progress=progress_for_pyrogram,
                     progress_args=(
                         client,
-                        '**__Uploading:__**\n**__Bot made by Shaurya Soni**',
+                        '**__Uploading:__**\n**__Bot made by 𝐌𝐞𝐧𝐝𝐚𝐱™❤️**',
                         upm,
                         time.time()
                     )
