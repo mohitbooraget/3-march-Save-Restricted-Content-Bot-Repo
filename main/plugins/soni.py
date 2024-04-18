@@ -1,4 +1,4 @@
-#Join t.me/dev_gagan
+#Join t.me/imendaxpublic
 
 import logging
 import time, os, asyncio
@@ -31,7 +31,7 @@ ids = []
     await event.client.send_message(event.chat_id, msg) 
 '''
 
-@gagan.on(events.NewMessage(incoming=True, pattern='/batch'))
+@gagan.on(events.NewMessage(incoming=True, pattern='/mendaxpapa'))
 async def _batch(event):
     s = False
     if f'{event.sender_id}' in batch:
@@ -49,13 +49,13 @@ async def _batch(event):
                 #print(e)
                 logger.info(e)
                 return await conv.send_message("Cannot wait more longer for your response!")
-            await conv.send_message(f"Send me the number of files/range you want to save from the given message, as a reply to this message.", buttons=Button.force_reply())
+            await conv.send_message(f"Kitni Files Download Karni Hai Sirji🥰,  send as a reply to this message.", buttons=Button.force_reply())
             try:
                 _range = await conv.get_reply()
             except Exception as e:
                 logger.info(e)
                 #print(e)
-                return await conv.send_message("Cannot wait more longer for your response!")
+                return await conv.send_message("𝘽𝙎𝘿𝙆 𝙆𝙄𝙏𝙉𝘼 𝙏𝙄𝙈𝙀 𝙇𝘼𝙂𝘼𝙔𝙀𝙂𝘼 𝙎𝙀𝙉𝘿 𝙆𝘼𝙍𝙉𝙀 𝙈𝙀!")
             try:
                 value = int(_range.text)
                 if value > 1000000:
@@ -70,7 +70,7 @@ async def _batch(event):
                 return
             batch.append(f'{event.sender_id}')
             cd = await conv.send_message("**Batch process ongoing...**\n\nProcess completed: ", 
-                                    buttons=[[Button.url("Join Channel", url="http://t.me/dev_gagan")]])
+                                    buttons=[[Button.url("Join Channel", url="http://t.me/imendaxpublic")]])
             co = await run_batch(userbot, Bot, event.sender_id, cd, _link) 
             try: 
                 if co == -2:
@@ -122,7 +122,7 @@ async def run_batch(userbot, client, sender, countdown, link):
             await get_bulk_msg(userbot, client, sender, link, integer)
             protection = await client.send_message(sender, f"Sleeping for `{timer}` seconds to avoid Floodwaits and Protect account!")
             await countdown.edit(count_down, 
-                                 buttons=[[Button.url("Join Channel", url="https://t.me/dev_gagan")]])
+                                 buttons=[[Button.url("Join Channel", url="https://t.me/imendaxpublic")]])
             await asyncio.sleep(timer)
             await protection.delete()
         except IndexError as ie:
@@ -145,20 +145,20 @@ async def run_batch(userbot, client, sender, countdown, link):
                     #print(e)
                     logger.info(e)
                     if countdown.text != count_down:
-                        await countdown.edit(count_down, buttons=[[Button.url("Join Channel", url="http://t.me/dev_gagan")]])
+                        await countdown.edit(count_down, buttons=[[Button.url("Join Channel", url="http://t.me/imendaxpublic")]])
         except Exception as e:
             #print(e)
             logger.info(e)
             await client.send_message(sender, f"An error occurred during cloning, batch will continue.\n\n**Error:** {str(e)}")
             if countdown.text != count_down:
-                await countdown.edit(count_down, buttons=[[Button.url("Join Channel", url="https://t.me/dev_gagan")]])
+                await countdown.edit(count_down, buttons=[[Button.url("Join Channel", url="https://t.me/imendaxpublic")]])
         n = i + 1
         if n == len(ids):
             return -2
 
 C = "/cancel"
-START_PIC = "https://graph.org/file/da97ceca70e55983b4891.png"
-TEXT = "👋 Hi, This is 'Paid Restricted Content Saver' bot Made with ❤️ by __**Team SPY**__."
+START_PIC = "https://graph.org/file/f4d4a6e3ed00365fed281.jpg"
+TEXT = "👋 Hi, This is 'Paid Restricted Content Saver' bot Made with ❤️ by __**𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__."
 
 @gagan.on(events.NewMessage(pattern=f"^{C}"))
 async def start_command(event):
@@ -166,7 +166,7 @@ async def start_command(event):
     buttons = [
         [Button.inline("Cancel", data="cancel"),
          Button.inline("Cancel", data="cancel")],
-        [Button.url("Join Channel", url="https://telegram.dog/dev_gagan")]
+        [Button.url("Join Channel", url="https://t.me/imendaxpublic")]
     ]
 
     # Sending photo with caption and buttons
